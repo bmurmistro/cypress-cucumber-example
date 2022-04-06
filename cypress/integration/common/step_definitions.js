@@ -1,18 +1,18 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 
-//beforeEach(function() {
-    /*cy.eyesOpen({
+beforeEach(function() {
+    cy.eyesOpen({
         // we are getting this from the applitools.config.js
         // appName: 'Applitools Hackathon - [Team Name]',
         testName: this.currentTest.title,
-    })*/
-//})
-//afterEach(() => {
-    /*cy.eyesClose()
+    })
+})
+afterEach(() => {
+    cy.eyesClose()
     cy.eyesGetAllTestResults().then(summary => {
       console.log(summary)
-    })*/
-//})
+    })
+})
 
 Given('I go to {string}', (url) => {
   cy.visit(url);
