@@ -23,3 +23,6 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
   on('file:preprocessor', cucumber());
 };
+
+
+require('@applitools/eyes-cypress')(module);
