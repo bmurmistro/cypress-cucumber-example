@@ -8,10 +8,10 @@ beforeEach(function() {
     })
 })
 afterEach(() => {
-    cy.eyesClose()
-    cy.eyesGetAllTestResults().then(summary => {
-      console.log(summary)
-    })
+    cy.eyesClose();
+	cy.eyesGetAllTestResults().then(summary => {
+		console.log(summary);
+	});
 })
 
 Given('I go to {string}', (url) => {
@@ -19,8 +19,8 @@ Given('I go to {string}', (url) => {
 });
 
 Then('I see title {string}', (title) => {
-  cy.title().should('equal', title);
-  //cy.eyesCheckWindow();
+  //cy.title().should('equal', title);
+  cy.eyesCheckWindow();
 });
 
 Then('I see text {string}', (text) => {

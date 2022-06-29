@@ -1,12 +1,13 @@
 {
   "scripts": {
     "cypress:open": "CYPRESS_TAGS='' cypress open",
-    "cypress:run": "cypress run"
+    "npm run cypress:run ": "cypress run"
   },
   "devDependencies": {
-    "@applitools/eyes-cypress": "^3.25.3",
-    "cypress": "^7.0.1",
+    "@applitools/eyes-cypress": "3.26.3",
+    "cypress": "^9.0.1",
     "cypress-cucumber-preprocessor": "^4.0.3",
     "cypress-xpath": "^1.6.2"
   }
 }
+
