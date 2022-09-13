@@ -4,4 +4,4 @@ Feature: Applitools
 
   Scenario: User goes to applitools.com
     Given I go to "https://www.applitools.com/"
-    Then I see title "Automated Visual Testing with Visual AI | Applitools"
+    Then I see title "Visually Perfect Applications with Automated Visual Testing - Applitools"
